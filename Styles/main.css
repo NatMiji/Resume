@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+/* Main page - color  */ 
+
+:root{
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgba(55, 199, 215, 0.736);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+    
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+}
+
+/* Google font */
+
+*{
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}
+
+/* Profile pic */
+
+#profile-pic{
+        width: 200px;
+        height: 200px;
+}
+
+#profile-pic{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 45%;
+}
+
+/* Top pattern */
+
+#wrapper--top{
+        display: flex;
+        align-items: center;
+        gap: 4em;
+}
+
+ 
+#user-name{
+    font-size: 30px;
+    line-height: 1em;
+}   
+
+#email{
+    color: var(--mainTextColor);
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+    column-gap: 0.5em;
+    flex-wrap: nowrap;
+    font-weight: 100;
+}
+
+#bio, a{
+    font-weight: 300;
+ }
+
+ /* Socials list - to connect  */
+
+#socials--list{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a{
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#socials--list a:hover{
+    font-weight: 100;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+}
+
+/* Skills & Qualifications  */
+
+#qualifications--list{
+    list-style: none; 
+
+}
+
+/* Tech stack */
+
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid var(--mainBorderColor);
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
+
+
+/* Colour of the theme  */
+
+
+body{
+    background-color: var(--mainBgColor);            
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 400;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* Work history  */
+
+.card--work-history{
+    border-left: 1px solid var(--mainBorderColor);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 1px;
+}
+
+
+
